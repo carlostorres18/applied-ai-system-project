@@ -98,3 +98,10 @@ All 148 tests pass with zero live API calls. The `conftest.py` autouse fixture p
 - **No personalization profile is inferred.** The chat UI does not build or store a user profile across sessions; it only uses the live query.
 - **SerpAPI results are real web links.** The system surfaces links it did not generate, so it inherits whatever biases, regional availability restrictions, or takedowns affect Spotify/Apple Music/YouTube search results.
 - **The 18-song local catalog is intentionally small** to keep results explainable in an educational context, not to reflect what an actual production recommender would serve.
+
+---
+
+## What This Project Says About Me as an AI Engineer
+
+Building this project showed me that AI engineering is less about knowing which model to call and more about understanding what happens between the model and the user. I ran into failures that had nothing to do with the AI itself — a browser sandbox blocking a URI scheme, a pytest runner not knowing where to find my modules, tracking parameters making duplicate songs look unique. Solving those edge cases required reading how systems actually behave, not just how they're documented. I also learned to think critically about what I build: the energy bias in the scoring engine, the unused acousticness field, the fact that a 148-test suite gives you confidence but not certainty. I leave this project knowing that responsible AI work means documenting what your system gets wrong just as clearly as what it gets right — and that the most valuable engineering skill is being honest about the gap between the two.
+
