@@ -10,6 +10,8 @@ An AI-powered music discovery app built with a three-layer recommendation pipeli
 
 ## Demo
 
+**Video Walkthrough:** [Watch on Loom](https://www.loom.com/share/d02a11ac7a3b4a8aa35ebc6923dbc366)
+
 | Query | Result |
 |-------|--------|
 | "sad breakup songs" | 4 deduplicated Spotify results with platform links |
