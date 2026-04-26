@@ -1,0 +1,13 @@
+name: Music Recommender Agent
+model: gpt-5.2
+welcome_text: "Tell me what you want to listen to, or ask for a playlist."
+instructions_file: instructions.md
+tools:
+  - web_search_songs
+  - web_build_playlist
+
+use_safe_agent: false
+
+model_settings:
+  temperature: 0.4
+  max_tokens: 1500

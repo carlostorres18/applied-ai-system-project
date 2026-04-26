@@ -1,0 +1,28 @@
+# Byte compiled
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# OS files
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# Runtime-generated directories
+.omniagent_runtime/
+
+# Environment / secrets — never commit these
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+secrets.yml
+secrets.yaml

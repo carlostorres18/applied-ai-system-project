@@ -1,0 +1,11 @@
+flowchart TD
+    A[Input: User Prefs\n- favorite_genre\n- favorite_mood\n- target_energy\n- likes_acoustic] --> B[Load songs.csv]
+    B --> C[Read one row -> Song object/dict]
+    C --> D[Compute per-song score\n1) Genre match\n2) Mood match\n3) Energy closeness\n4) Acoustic preference\n5) Weighted sum]
+    D --> E[Create explanation for this song]
+    E --> F[Store candidate\n(song, score, explanation)]
+    F --> G{More songs?}
+    G -->|Yes| C
+    G -->|No| H[Sort all candidates by score DESC]
+    H --> I[Take Top K]
+    I --> J[Output: Ranked recommendations]
